@@ -3,16 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 
-
-const getAllEmployees = require('./app/routes/getAllEmployees');
-const getEmployeesById = require('./app/routes/getEmployeesById');
-const insertEmployees = require('./app/routes/insertEmployees');
-const getAllFiles = require('./app/routes/getAllFiles');
-const deleteFile = require('./app/routes/deleteFile');
-const renameFile = require('./app/routes/renameFile');
-const createFile = require('./app/routes/createFile');
-const createFileWithContent = require('./app/routes/createFileWithContent');
-const uploadFile = require('./app/routes/uploadFile');
+const routes = require('./app/routes');
 
 let app = express();
 let PORT = 3000;
@@ -28,29 +19,24 @@ app.get('/', function (req, res) {
   return res.end();
 })
  
-
 // Display all the employee information
-app.get('/employees', getAllEmployees);
+app.get('/employees', routes.getAllEmployees);
 // Display employee information associated with a specific id.
-app.get('/employees/:id', getEmployeesById); 
+app.get('/employees/:id', routes.getEmployeesById); 
 // Insert new Employee
-app.post('/employees', insertEmployees);
-
-
+app.post('/employees', routes.insertEmployees);
 
 // get all Files
-app.get('/files', getAllFiles); 
+app.get('/files', routes.getAllFiles); 
 // add a new file
-app.post('/files/:filename', createFile);
-app.post('/files', createFileWithContent);
+app.post('/files/:filename', routes.createFile);
+app.post('/files', routes.createFileWithContent);
 // Delete a file
-app.delete('/files/:filename', deleteFile); 
+app.delete('/files/:filename', routes.deleteFile); 
 // rename a File
-app.put('/files/:oldFilename/:newFilename', renameFile); 
+app.put('/files/:oldFilename/:newFilename', routes.renameFile); 
 // Upload File
-app.post('/fileupload', uploadFile);
-
-
+app.post('/fileupload', routes.uploadFile);
 
 app.listen(PORT, function() {
     console.log(`App listening at http://localhost:${PORT}`);
