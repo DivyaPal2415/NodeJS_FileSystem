@@ -1,0 +1,16 @@
+{
+    "project": [
+        {
+            "projectId": "p1",
+            "description": "Training Project",
+            "client": "TCS",
+            "status": "Pending"
+        },
+        {
+            "projectId": "p2",
+            "description": "Software Project",
+            "client": "Google",
+            "status": "Pending"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Gauri",
+            "designation": "Trainer",
+            "address": {
+                "city": "abc",
+                "country": "India",
+                "zipcode": 456789
+            },
+            "projectId": "TCS_Corp_01"
+        },
+        {
+            "id": 2,
+            "name": "Sam",
+            "designation": "Software eng",
+            "address": {
+                "city": "abc",
+                "country": "USA",
+                "zipcode": 1234
+            },
+            "projectId": "TCS_P1"
+        },
+        {
+            "id": 3,
+            "name": "Tani",
+            "designation": "Sr. Software Eng",
+            "address": {
+                "city": "xyz",
+                "country": "USA",
+                "zipcode": 2345
+            },
+            "projectId": "TCS_Corp_01"
+        },
+        {
+            "id": 4,
+            "name": "Divya",
+            "designation": "Manager",
+            "address": {
+                "city": "pqr",
+                "country": "USA",
+                "zipcode": 7634
+            },
+            "projectId": "TCS_P1"
+        },
+        {
+            "id": 5,
+            "name": "Vishva",
+            "designation": "Software Developer",
+            "address": {
+                "city": "pqr",
+                "country": "Canada",
+                "zipcode": 7085
+            },
+            "projectId": "TCS_P1"
+        },
+    
+
+{"id":6,"name":"Shiva","designation":"Trainer","address":"USA","projectId":"TCS_Corp_01"},
+{"id":7,"name":"Gauri","designation":"Trainer","address":{},"projectId":"TCS_Corp_01"},
+{"id":8,"name":"Gauri","designation":"Trainer","address":{"city":"abc","country":"India","zipcode":456789},"projectId":"TCS_Corp_01"},
+{"id":10,"name":"Gauri","designation":"Trainer","address":{"city":"abc","country":"India","zipcode":456789},"projectId":"TCS_Corp_01"}]}
